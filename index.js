@@ -27,15 +27,11 @@ const configuration_workflow = () =>
 const functions = ({ api_key }) => ({
   stability_generate: {
     run: async (prompt) => {
-      try {
-        const { res, images } = await generateAsync({
-          prompt,
-          apiKey: api_key,
-        });
-        console.log(images);
-      } catch (e) {
-        // ...
-      }
+      const { res, images } = await generateAsync({
+        prompt,
+        apiKey: api_key,
+      });
+      return images;
     },
     isAsync: true,
     description: "Generate an image",
