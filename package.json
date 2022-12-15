@@ -1,0 +1,13 @@
+{
+  "name": "@saltcorn/stability-ai",
+  "version": "0.1.0",
+  "description": "Stable Diffusion image generation",
+  "main": "index.js",
+  "dependencies": {
+    "@saltcorn/data": "^0.7.0",
+    "stability-client": "1.8.0"
+  },
+  "author": "Tom Nielsen",
+  "license": "MIT",
+  "repository": "github:saltcorn/stability-ai"
+}
